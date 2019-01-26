@@ -26,7 +26,7 @@ def mask_to_label(mask):
     label =  (mask[0] > 128)*1
     label += (mask[1] > 128)*2
     label += (mask[2] > 128)*4
-    return label
+    return label.long()
 
 def label_to_mask(label):
     '''

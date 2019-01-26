@@ -44,20 +44,67 @@ def label_to_mask(label):
     mask = mask * 255
     return mask
 
+def read_sat_image(path):
+    '''
+    read sat image and convert 
+    '''
+    img = cv.imread(path)
+    img = numpy_to_torch(img, torch.float)
+    return img
+
+def read_mask_to_label(path):
+    '''
+    read mask and convert to label
+    '''
+    msk = cv.imread(path)
+    msk = numpy_to_torch(msk, torch.long)
+    label = mask_to_label(msk)
+    return label
+
 def process(img, name):
     '''
     convert mask.png to label map then convert back,
     save with name
     '''
-    img = cv.imread(img)
-    img = numpy_to_torch(img, dtype=torch.long)
-    label = mask_to_label(img)
+    label = read_mask_to_label(img)
     mask = label_to_mask(label)
     mask = torch_to_numpy(mask)
     cv.imwrite(name, mask)
 
+def mean_iou(label_x, label_y):
+    '''
+    type: torch
+    labels: 1, 2, 3, 5, 6, 7
+    label_x : prediction
+    label_y : ground truth
+    '''
+    labels = [1, 2, 3, 5, 6, 7]
+    iou = 0
+    class_num = 0
+    for label in labels:
+        x = torch.sum(label_x == label).item()
+        y = torch.sum(label_y == label).item()
+        both = torch.sum((label_x == label) * (label_y == label)).item()
+        if y > 0: # Calculate mean iou only when ground truth has that class
+            iou += both/(x + y - both)
+            class_num = class_num + 1
+
+    mean_iou = iou/class_num
+    return mean_iou
+
+def mean_iou_batch(batch_x, batch_y):
+    num = batch_x.size(0)
+    iou = 0
+    for i in range(num):
+        iou = iou + mean_iou(batch_x[i], batch_y[i])
+    iou = iou / num
+    return iou
+
 def test():
-    pass
+    label_1 = read_mask_to_label('0028_mask.png')
+    label_2 = read_mask_to_label('0028_mask.png')
+    m_iou = mean_iou(label_1, label_2)
+    print('Mean IOU:', m_iou)
 
 if __name__ == '__main__':
     test()

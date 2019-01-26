@@ -4,6 +4,7 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 import os
 from matplotlib import pyplot as plt
+from util import *
 
 class Dataset_Seg(Dataset):
     def __init__(self, root, train = True):
@@ -24,12 +25,9 @@ class Dataset_Seg(Dataset):
         return len(self.img_list)
 
     def __getitem__(self, idx):
-        img = cv.imread(self.img_list[idx])
-        img = torch.tensor(img, dtype= torch.float)
-        msk = cv.imread(self.msk_list[idx])
-        msk = torch.tensor(msk, dtype= torch.long)
-        img , msk = img.permute(2, 0, 1), msk.permute(2, 0, 1)
-        return img, msk
+        img   = read_sat_image(self.img_list[idx])
+        label = read_mask_to_label(self.msk_list[idx])
+        return img, label
 
 def unit_test():
     data_train = Dataset_Seg('../data-segmentation', train=True)

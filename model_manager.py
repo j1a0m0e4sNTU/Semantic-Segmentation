@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
+from util import *
 
 def get_string(*args):
     string = ''
@@ -50,8 +51,9 @@ class Manaeger():
     def train(self):
         info = self.get_info()
         self.record(info)
-        self.model.train()
+        
         for epoch in range(self.epoch_num):
+            self.model.train()
             for batch_id, (imgs, labels) in enumerate(self.train_loader):
                 imgs, labels = imgs.to(self.device), labels.to(self.device)
     
@@ -67,13 +69,13 @@ class Manaeger():
 
             self.validate(epoch)
         
-        info = get_string('\n# The best model is at epoch', self.best[0], 'with accuracy', self.best[1])
+        info = get_string('\n# The best model is at epoch', self.best[0], 'with mean IOU', self.best[1])
         self.record(info)
 
     def validate(self, epoch):
         self.model.eval()
         loss_total = 0
-        correct_total  = 0
+        total_iou = 0
         
         for batch_id, (imgs, labels) in enumerate(self.valid_loader):
             imgs, labels = imgs.to(self.device), labels.to(self.device)
@@ -83,19 +85,18 @@ class Manaeger():
             loss_total += loss.item()
             
             pred = out.max(1)[1]
-            correct = sum(pred == labels).item()
-            correct_total += correct
+            total_iou = total_iou + mean_iou_batch(pred, labels)
 
         loss_avg = loss_total / (batch_id + 1)
-        acc = correct_total / ((batch_id + 1) * self.batch_size)
+        mean_iou = total_iou / ((batch_id + 1) * self.batch_size)
         line = '\n----------------------------\n'
         info = get_string('Validation result for ', epoch, 'epoch\n')
-        info = get_string(info,'Average loss:', loss_avg, '\n Accuracy:', acc)
+        info = get_string(info,'Average loss:', loss_avg, '\n Mean IOU:', mean_iou)
         info = get_string(line, info, line)
         self.record(info)
 
-        if acc > self.best[1]:
-            self.best = (epoch, acc)
+        if mean_iou > self.best[1]:
+            self.best = (epoch, mean_iou)
             torch.save(self.model.state_dict(), self.save_name)
             self.record('***** Saved best model! *****\n')
 

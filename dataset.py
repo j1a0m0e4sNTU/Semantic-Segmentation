@@ -34,7 +34,7 @@ def unit_test():
     data_valid = Dataset_Seg('../data-segmentation', train= False)
     loader = DataLoader(data_train, batch_size= 8)
     i = 0
-    for imgs, msks in loader:
+    for id, (imgs, msks) in enumerate(loader):
         if i == 2:break
         i = i+1
         print(imgs.size())

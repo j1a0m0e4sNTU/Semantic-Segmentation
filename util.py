@@ -23,9 +23,9 @@ def mask_to_label(mask):
     type: troch.tensor
     convert mask to label map (1 chanel)
     '''
-    label =  (mask[0]//255)*1
-    label += (mask[1]//255)*2
-    label += (mask[2]//255)*4
+    label =  (mask[0] > 128)*1
+    label += (mask[1] > 128)*2
+    label += (mask[2] > 128)*4
     return label
 
 def label_to_mask(label):
@@ -107,4 +107,4 @@ def test():
     print('Mean IOU:', m_iou)
 
 if __name__ == '__main__':
-    test()
+    process('0028_mask.png', 'test.png')

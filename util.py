@@ -100,6 +100,29 @@ def mean_iou_batch(batch_x, batch_y):
     iou = iou / num
     return iou
 
+def pixel_wise_accuracy(label_x, label_y):
+    '''
+    type: torch tensor
+    calculate accuracy for each pixel
+    '''
+    w, h = label_x.size(0), label_x.size(1)
+    match_map = (label_x == label_y)
+    match = torch.sum(match_map).item()
+    acc = match/(w*h)
+    return acc
+
+def pixel_wise_accuracy_batch(batch_x, batch_y):
+    '''
+    type: torch tensor
+    calculate pixel-wise accuracy for two batches
+    '''
+    num = batch_x.size(0)
+    acc = 0
+    for i in range(num):
+        acc = acc + pixel_wise_accuracy(batch_x[i], batch_y[i])
+    acc = acc / num
+    return acc
+
 def test():
     label_1 = read_mask_to_label('0028_mask.png')
     label_2 = read_mask_to_label('0028_mask.png')

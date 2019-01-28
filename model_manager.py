@@ -74,6 +74,7 @@ class Manaeger():
         self.model.eval()
         loss_total = 0
         total_iou = 0
+        pixel_wise_acc = 0
         
         for batch_id, (imgs, labels) in enumerate(self.valid_loader):
             imgs, labels = imgs.to(self.device), labels.to(self.device)
@@ -84,12 +85,14 @@ class Manaeger():
             
             pred = out.max(1)[1]
             total_iou = total_iou + mean_iou_batch(pred, labels)
+            pixel_wise_acc = pixel_wise_acc + pixel_wise_accuracy_batch(pred, labels)
 
         loss_avg = loss_total / (batch_id + 1)
         mean_iou = total_iou /  (batch_id + 1)
+        pixel_wise_acc = pixel_wise_acc / (batch_id + 1)
         line = '\n----------------------------\n'
         info = get_string('Validation result for ', epoch, 'epoch\n')
-        info = get_string(info,'Average loss:', loss_avg, '\n Mean IOU:', mean_iou)
+        info = get_string(info,'Average loss:', loss_avg, '\n Mean IOU:', mean_iou,'\n Pixel-wise Acc:', pixel_wise_acc)
         info = get_string(line, info, line)
         self.record(info)
 

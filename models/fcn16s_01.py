@@ -50,7 +50,7 @@ class Model(nn.Module):
             nn.MaxPool2d((2, 2), stride= (2, 2))
         )
 
-        self.upsample = ConvTranspose2dLayer(512, 64, kernel_size= 16, stride= 16, padding= 0,output_padding= 0)
+        self.upsample = ConvTranspose2dLayer(512, 64, kernel_size= 32, stride= 32, padding= 0,output_padding= 0)
         self.final_layer = nn.Conv2d(64, 8, kernel_size=1)
 
     def name(self):

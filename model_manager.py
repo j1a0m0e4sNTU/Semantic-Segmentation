@@ -88,7 +88,7 @@ class Manaeger():
             total_iou = total_iou + mean_iou_batch(pred, labels)
 
         loss_avg = loss_total / (batch_id + 1)
-        mean_iou = total_iou / ((batch_id + 1) * self.batch_size)
+        mean_iou = total_iou /  (batch_id + 1)
         line = '\n----------------------------\n'
         info = get_string('Validation result for ', epoch, 'epoch\n')
         info = get_string(info,'Average loss:', loss_avg, '\n Mean IOU:', mean_iou)

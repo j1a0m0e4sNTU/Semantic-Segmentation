@@ -1,8 +1,23 @@
        Model: FCN-16s (upsample with 1 step) 
  Learning rate: 0.001 
  Epoch number: 50 
- Batch size: 12 
+ Batch size: 8 
  Weight name: ../weights/bese_01_01.pkl 
  Log file: <_io.TextIOWrapper name='logs/fcn16s_01_01.txt' mode='w' encoding='UTF-8'> 
  =======================
 
+ Epoch 0 | batch 0 | Training loss : 2.0846643447875977 
+ Epoch 0 | batch 20 | Training loss : 1.8337481021881104 
+ Epoch 0 | batch 40 | Training loss : 1.4120599031448364 
+ Epoch 0 | batch 60 | Training loss : 1.1787197589874268 
+ Epoch 0 | batch 80 | Training loss : 1.4882338047027588 
+ Epoch 0 | batch 100 | Training loss : 0.9154883027076721 
+ Epoch 0 | batch 120 | Training loss : 0.8652980327606201 
+ Epoch 0 | batch 140 | Training loss : 1.4767626523971558 
+ Epoch 0 | batch 160 | Training loss : 1.1249549388885498 
+ Epoch 0 | batch 180 | Training loss : 0.9396112561225891 
+ Epoch 0 | batch 200 | Training loss : 1.155733585357666 
+ Epoch 0 | batch 220 | Training loss : 1.0051840543746948 
+ Epoch 0 | batch 240 | Training loss : 1.0145692825317383 
+ Epoch 0 | batch 260 | Training loss : 0.9268838763237 
+ Epoch 0 | batch 280 | Training loss : 1.039609432220459 

@@ -76,7 +76,7 @@ class Model(nn.Module):
         x = self.relu(self.bn_4(self.deconv_4(x)))
         x = self.relu(self.bn_5(self.deconv_5()))
         x = self.final_layer(x)
-        
+
         return x
         
 def parameter_number(model):
@@ -97,6 +97,6 @@ def show_info():
     print(model)
     
 if __name__ == '__main__':
-    unit_test()
-    print('-- Pass unit test --')
-    #show_info()
+    #unit_test()
+    #print('-- Pass unit test --')
+    show_info()

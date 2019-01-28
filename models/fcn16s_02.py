@@ -90,6 +90,6 @@ def show_info():
     print(model)
     
 if __name__ == '__main__':
-    unit_test()
-    print('-- Pass unit test --')
-    #show_info()
+    #unit_test()
+    #print('-- Pass unit test --')
+    show_info()

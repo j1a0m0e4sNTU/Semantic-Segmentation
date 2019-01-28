@@ -69,8 +69,6 @@ class Manaeger():
 
             self.validate(epoch)
         
-        info = get_string('\n# The best model is at epoch', self.best[0], 'with mean IOU', self.best[1])
-        self.record(info)
 
     def validate(self, epoch):
         self.model.eval()
@@ -99,6 +97,9 @@ class Manaeger():
             self.best = (epoch, mean_iou)
             torch.save(self.model.state_dict(), self.save_name)
             self.record('***** Saved best model! *****\n')
+        
+        info = get_string('\n# The best model is at epoch', self.best[0], 'with mean IOU', self.best[1])
+        self.record(info)
 
 if __name__ == '__main__':
     pass

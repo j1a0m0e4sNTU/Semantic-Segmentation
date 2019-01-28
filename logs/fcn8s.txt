@@ -1,0 +1,9 @@
+       Model: FCN-8s 
+ Learning rate: 0.001 
+ Epoch number: 100 
+ Batch size: 8 
+ Weight name: ../weights/fcn8s_01.pkl 
+ Log file: <_io.TextIOWrapper name='logs/fcn8s.txt' mode='w' encoding='UTF-8'> 
+ =======================
+
+ Epoch 0 | batch 0 | Training loss : 2.119772434234619 

@@ -74,7 +74,7 @@ class Model(nn.Module):
         x = x + s_8
         x = self.relu(self.bn_3(self.deconv_3(x)))
         x = self.relu(self.bn_4(self.deconv_4(x)))
-        x = self.relu(self.bn_5(self.deconv_5()))
+        x = self.relu(self.bn_5(self.deconv_5(x)))
         x = self.final_layer(x)
 
         return x

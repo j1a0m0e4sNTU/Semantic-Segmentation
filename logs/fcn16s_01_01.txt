@@ -1,0 +1,8 @@
+       Model: FCN-16s (upsample with 1 step) 
+ Learning rate: 0.001 
+ Epoch number: 50 
+ Batch size: 12 
+ Weight name: ../weights/bese_01_01.pkl 
+ Log file: <_io.TextIOWrapper name='logs/fcn16s_01_01.txt' mode='w' encoding='UTF-8'> 
+ =======================
+

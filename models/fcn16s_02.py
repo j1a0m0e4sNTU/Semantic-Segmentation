@@ -51,10 +51,10 @@ class Model(nn.Module):
         )
 
         self.block_6 = nn.Sequential(
-            ConvTranspose2dLayer(512, 256, kernel_size= 3, stride= 2, padding= 1, output_padding= 1),
+            ConvTranspose2dLayer(512, 256, kernel_size= 5, stride= 4, padding= 1, output_padding= 1),
             ConvTranspose2dLayer(256, 128, kernel_size= 3, stride= 2, padding= 1, output_padding= 1),
             ConvTranspose2dLayer(128, 64, kernel_size= 3, stride= 2, padding= 1, output_padding= 1),
-            ConvTranspose2dLayer(64, 32, kernel_size= 3, stride= 2, padding= 1, output_padding= 1),
+            ConvTranspose2dLayer(64, 32, kernel_size= 3, stride= 2, padding= 1, output_padding= 1)
         ) 
         self.final_layer = nn.Conv2d(32, 8, kernel_size=1)
 

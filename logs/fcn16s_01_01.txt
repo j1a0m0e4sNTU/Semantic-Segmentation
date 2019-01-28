@@ -2,9 +2,535 @@
  Learning rate: 0.001 
  Epoch number: 50 
  Batch size: 6 
- Weight name: ../weights/bese_01_01.pkl 
+ Weight name: ../weights/fcn16s_01_01.pkl 
  Log file: <_io.TextIOWrapper name='logs/fcn16s_01_01.txt' mode='w' encoding='UTF-8'> 
  =======================
 
- Epoch 0 | batch 0 | Training loss : 2.1065244674682617 
- Epoch 0 | batch 20 | Training loss : 1.6944236755371094 
+ Epoch 0 | batch 0 | Training loss : 2.0695395469665527 
+ Epoch 0 | batch 20 | Training loss : 1.8223309516906738 
+ Epoch 0 | batch 40 | Training loss : 1.29182767868042 
+ Epoch 0 | batch 60 | Training loss : 1.036089539527893 
+ Epoch 0 | batch 80 | Training loss : 1.2995890378952026 
+ Epoch 0 | batch 100 | Training loss : 0.9545300006866455 
+ Epoch 0 | batch 120 | Training loss : 1.2892860174179077 
+ Epoch 0 | batch 140 | Training loss : 1.477718472480774 
+ Epoch 0 | batch 160 | Training loss : 1.2505667209625244 
+ Epoch 0 | batch 180 | Training loss : 0.9999993443489075 
+ Epoch 0 | batch 200 | Training loss : 0.8405716419219971 
+ Epoch 0 | batch 220 | Training loss : 0.9381857514381409 
+ Epoch 0 | batch 240 | Training loss : 1.4946376085281372 
+ Epoch 0 | batch 260 | Training loss : 1.0537971258163452 
+ Epoch 0 | batch 280 | Training loss : 1.0087608098983765 
+ Epoch 0 | batch 300 | Training loss : 1.1742597818374634 
+ Epoch 0 | batch 320 | Training loss : 1.145896077156067 
+ Epoch 0 | batch 340 | Training loss : 1.1402689218521118 
+ Epoch 0 | batch 360 | Training loss : 1.0646830797195435 
+ Epoch 0 | batch 380 | Training loss : 0.9567632079124451 
+ 
+----------------------------
+   Validation result for  0 epoch
+ Average loss: 1.1479974596999412 
+ Mean IOU: 0.32721252784924854 
+----------------------------
+***** Saved best model! *****
+ 
+# The best model is at epoch 0 with mean IOU 0.32721252784924854 Epoch 1 | batch 0 | Training loss : 0.7517713904380798 
+ Epoch 1 | batch 20 | Training loss : 0.8504236340522766 
+ Epoch 1 | batch 40 | Training loss : 0.9407755732536316 
+ Epoch 1 | batch 60 | Training loss : 1.7321043014526367 
+ Epoch 1 | batch 80 | Training loss : 0.8371197581291199 
+ Epoch 1 | batch 100 | Training loss : 1.3314510583877563 
+ Epoch 1 | batch 120 | Training loss : 1.1049742698669434 
+ Epoch 1 | batch 140 | Training loss : 1.7268190383911133 
+ Epoch 1 | batch 160 | Training loss : 1.53831148147583 
+ Epoch 1 | batch 180 | Training loss : 1.6269479990005493 
+ Epoch 1 | batch 200 | Training loss : 0.8441734910011292 
+ Epoch 1 | batch 220 | Training loss : 0.9247881770133972 
+ Epoch 1 | batch 240 | Training loss : 1.5720607042312622 
+ Epoch 1 | batch 260 | Training loss : 1.1568541526794434 
+ Epoch 1 | batch 280 | Training loss : 0.8096444010734558 
+ Epoch 1 | batch 300 | Training loss : 0.972694456577301 
+ Epoch 1 | batch 320 | Training loss : 1.0202072858810425 
+ Epoch 1 | batch 340 | Training loss : 0.7142047882080078 
+ Epoch 1 | batch 360 | Training loss : 0.9666598439216614 
+ Epoch 1 | batch 380 | Training loss : 1.1617525815963745 
+ 
+----------------------------
+   Validation result for  1 epoch
+ Average loss: 0.9179773843565653 
+ Mean IOU: 0.36167875231697866 
+----------------------------
+***** Saved best model! *****
+ 
+# The best model is at epoch 1 with mean IOU 0.36167875231697866 Epoch 2 | batch 0 | Training loss : 0.776599109172821 
+ Epoch 2 | batch 20 | Training loss : 0.9934441447257996 
+ Epoch 2 | batch 40 | Training loss : 1.381180763244629 
+ Epoch 2 | batch 60 | Training loss : 1.3658968210220337 
+ Epoch 2 | batch 80 | Training loss : 1.0735961198806763 
+ Epoch 2 | batch 100 | Training loss : 1.1558462381362915 
+ Epoch 2 | batch 120 | Training loss : 1.092481255531311 
+ Epoch 2 | batch 140 | Training loss : 0.7830810546875 
+ Epoch 2 | batch 160 | Training loss : 0.7181833386421204 
+ Epoch 2 | batch 180 | Training loss : 1.931257724761963 
+ Epoch 2 | batch 200 | Training loss : 0.9701701998710632 
+ Epoch 2 | batch 220 | Training loss : 0.9120147824287415 
+ Epoch 2 | batch 240 | Training loss : 1.2056504487991333 
+ Epoch 2 | batch 260 | Training loss : 0.9303887486457825 
+ Epoch 2 | batch 280 | Training loss : 0.746630847454071 
+ Epoch 2 | batch 300 | Training loss : 0.8954418301582336 
+ Epoch 2 | batch 320 | Training loss : 0.8713273406028748 
+ Epoch 2 | batch 340 | Training loss : 1.3243387937545776 
+ Epoch 2 | batch 360 | Training loss : 1.281614065170288 
+ Epoch 2 | batch 380 | Training loss : 0.8464757800102234 
+ 
+----------------------------
+   Validation result for  2 epoch
+ Average loss: 0.951620175394901 
+ Mean IOU: 0.357324417243716 
+----------------------------
+ 
+# The best model is at epoch 1 with mean IOU 0.36167875231697866 Epoch 3 | batch 0 | Training loss : 0.7093536257743835 
+ Epoch 3 | batch 20 | Training loss : 0.7036538124084473 
+ Epoch 3 | batch 40 | Training loss : 0.4650402069091797 
+ Epoch 3 | batch 60 | Training loss : 0.8631959557533264 
+ Epoch 3 | batch 80 | Training loss : 0.6738885045051575 
+ Epoch 3 | batch 100 | Training loss : 0.888705313205719 
+ Epoch 3 | batch 120 | Training loss : 0.6441301107406616 
+ Epoch 3 | batch 140 | Training loss : 0.8464657664299011 
+ Epoch 3 | batch 160 | Training loss : 0.9270392060279846 
+ Epoch 3 | batch 180 | Training loss : 1.1115760803222656 
+ Epoch 3 | batch 200 | Training loss : 0.6391081213951111 
+ Epoch 3 | batch 220 | Training loss : 0.7722253799438477 
+ Epoch 3 | batch 240 | Training loss : 0.8169019818305969 
+ Epoch 3 | batch 260 | Training loss : 0.8456490635871887 
+ Epoch 3 | batch 280 | Training loss : 1.2398923635482788 
+ Epoch 3 | batch 300 | Training loss : 0.8399450778961182 
+ Epoch 3 | batch 320 | Training loss : 1.0146875381469727 
+ Epoch 3 | batch 340 | Training loss : 1.1747652292251587 
+ Epoch 3 | batch 360 | Training loss : 0.9894598126411438 
+ Epoch 3 | batch 380 | Training loss : 0.9198006987571716 
+ 
+----------------------------
+   Validation result for  3 epoch
+ Average loss: 0.8772840860278107 
+ Mean IOU: 0.35957626792668884 
+----------------------------
+ 
+# The best model is at epoch 1 with mean IOU 0.36167875231697866 Epoch 4 | batch 0 | Training loss : 1.3180545568466187 
+ Epoch 4 | batch 20 | Training loss : 0.7857611179351807 
+ Epoch 4 | batch 40 | Training loss : 0.6485897898674011 
+ Epoch 4 | batch 60 | Training loss : 0.5665862560272217 
+ Epoch 4 | batch 80 | Training loss : 0.9510498642921448 
+ Epoch 4 | batch 100 | Training loss : 0.861788272857666 
+ Epoch 4 | batch 120 | Training loss : 0.6934831142425537 
+ Epoch 4 | batch 140 | Training loss : 1.3729900121688843 
+ Epoch 4 | batch 160 | Training loss : 0.7734661102294922 
+ Epoch 4 | batch 180 | Training loss : 0.7923420071601868 
+ Epoch 4 | batch 200 | Training loss : 0.9075946807861328 
+ Epoch 4 | batch 220 | Training loss : 0.8637036681175232 
+ Epoch 4 | batch 240 | Training loss : 0.8889721035957336 
+ Epoch 4 | batch 260 | Training loss : 0.8585392832756042 
+ Epoch 4 | batch 280 | Training loss : 1.0547642707824707 
+ Epoch 4 | batch 300 | Training loss : 0.8905001282691956 
+ Epoch 4 | batch 320 | Training loss : 0.3639943599700928 
+ Epoch 4 | batch 340 | Training loss : 0.5820038914680481 
+ Epoch 4 | batch 360 | Training loss : 1.076942801475525 
+ Epoch 4 | batch 380 | Training loss : 0.49492156505584717 
+ 
+----------------------------
+   Validation result for  4 epoch
+ Average loss: 0.7345553317735362 
+ Mean IOU: 0.3831104366521551 
+----------------------------
+***** Saved best model! *****
+ 
+# The best model is at epoch 4 with mean IOU 0.3831104366521551 Epoch 5 | batch 0 | Training loss : 0.7757551074028015 
+ Epoch 5 | batch 20 | Training loss : 0.7938094139099121 
+ Epoch 5 | batch 40 | Training loss : 0.6244650483131409 
+ Epoch 5 | batch 60 | Training loss : 0.706748902797699 
+ Epoch 5 | batch 80 | Training loss : 0.7812514305114746 
+ Epoch 5 | batch 100 | Training loss : 1.1299092769622803 
+ Epoch 5 | batch 120 | Training loss : 0.5030388236045837 
+ Epoch 5 | batch 140 | Training loss : 0.7011792063713074 
+ Epoch 5 | batch 160 | Training loss : 0.9814131855964661 
+ Epoch 5 | batch 180 | Training loss : 0.8512330055236816 
+ Epoch 5 | batch 200 | Training loss : 1.2381219863891602 
+ Epoch 5 | batch 220 | Training loss : 0.6615895628929138 
+ Epoch 5 | batch 240 | Training loss : 0.609517514705658 
+ Epoch 5 | batch 260 | Training loss : 1.203127384185791 
+ Epoch 5 | batch 280 | Training loss : 0.5490503907203674 
+ Epoch 5 | batch 300 | Training loss : 0.8501991629600525 
+ Epoch 5 | batch 320 | Training loss : 0.9955869317054749 
+ Epoch 5 | batch 340 | Training loss : 0.5961840748786926 
+ Epoch 5 | batch 360 | Training loss : 0.5383221507072449 
+ Epoch 5 | batch 380 | Training loss : 0.7756309509277344 
+ 
+----------------------------
+   Validation result for  5 epoch
+ Average loss: 0.6735340287519056 
+ Mean IOU: 0.4229274151414248 
+----------------------------
+***** Saved best model! *****
+ 
+# The best model is at epoch 5 with mean IOU 0.4229274151414248 Epoch 6 | batch 0 | Training loss : 0.4911786615848541 
+ Epoch 6 | batch 20 | Training loss : 0.48344168066978455 
+ Epoch 6 | batch 40 | Training loss : 0.3946091830730438 
+ Epoch 6 | batch 60 | Training loss : 0.4254946708679199 
+ Epoch 6 | batch 80 | Training loss : 0.7210485339164734 
+ Epoch 6 | batch 100 | Training loss : 0.640497624874115 
+ Epoch 6 | batch 120 | Training loss : 0.5800120830535889 
+ Epoch 6 | batch 140 | Training loss : 0.5875155925750732 
+ Epoch 6 | batch 160 | Training loss : 0.6697507500648499 
+ Epoch 6 | batch 180 | Training loss : 0.7622584700584412 
+ Epoch 6 | batch 200 | Training loss : 1.0405521392822266 
+ Epoch 6 | batch 220 | Training loss : 1.6006520986557007 
+ Epoch 6 | batch 240 | Training loss : 0.8467962145805359 
+ Epoch 6 | batch 260 | Training loss : 0.7909212112426758 
+ Epoch 6 | batch 280 | Training loss : 0.7143866419792175 
+ Epoch 6 | batch 300 | Training loss : 0.5373389720916748 
+ Epoch 6 | batch 320 | Training loss : 0.7576098442077637 
+ Epoch 6 | batch 340 | Training loss : 0.6585242748260498 
+ Epoch 6 | batch 360 | Training loss : 1.1004281044006348 
+ Epoch 6 | batch 380 | Training loss : 0.613538920879364 
+ 
+----------------------------
+   Validation result for  6 epoch
+ Average loss: 0.6875935072122619 
+ Mean IOU: 0.4150079213117288 
+----------------------------
+ 
+# The best model is at epoch 5 with mean IOU 0.4229274151414248 Epoch 7 | batch 0 | Training loss : 0.9028609395027161 
+ Epoch 7 | batch 20 | Training loss : 1.0961956977844238 
+ Epoch 7 | batch 40 | Training loss : 0.871474027633667 
+ Epoch 7 | batch 60 | Training loss : 1.5398191213607788 
+ Epoch 7 | batch 80 | Training loss : 0.5167436599731445 
+ Epoch 7 | batch 100 | Training loss : 0.6369817852973938 
+ Epoch 7 | batch 120 | Training loss : 0.6242858171463013 
+ Epoch 7 | batch 140 | Training loss : 0.7049252390861511 
+ Epoch 7 | batch 160 | Training loss : 1.4037202596664429 
+ Epoch 7 | batch 180 | Training loss : 0.790950357913971 
+ Epoch 7 | batch 200 | Training loss : 0.6130633354187012 
+ Epoch 7 | batch 220 | Training loss : 0.7833250164985657 
+ Epoch 7 | batch 240 | Training loss : 0.8275933265686035 
+ Epoch 7 | batch 260 | Training loss : 0.8153733611106873 
+ Epoch 7 | batch 280 | Training loss : 0.6127484440803528 
+ Epoch 7 | batch 300 | Training loss : 0.6500409245491028 
+ Epoch 7 | batch 320 | Training loss : 0.8294699788093567 
+ Epoch 7 | batch 340 | Training loss : 0.7767245769500732 
+ Epoch 7 | batch 360 | Training loss : 0.8144589066505432 
+ Epoch 7 | batch 380 | Training loss : 0.8717322945594788 
+ 
+----------------------------
+   Validation result for  7 epoch
+ Average loss: 0.6870675759260044 
+ Mean IOU: 0.42682471556616314 
+----------------------------
+***** Saved best model! *****
+ 
+# The best model is at epoch 7 with mean IOU 0.42682471556616314 Epoch 8 | batch 0 | Training loss : 0.632308304309845 
+ Epoch 8 | batch 20 | Training loss : 0.598816454410553 
+ Epoch 8 | batch 40 | Training loss : 0.508492112159729 
+ Epoch 8 | batch 60 | Training loss : 0.7565928101539612 
+ Epoch 8 | batch 80 | Training loss : 1.2151786088943481 
+ Epoch 8 | batch 100 | Training loss : 0.8304056525230408 
+ Epoch 8 | batch 120 | Training loss : 0.6275821328163147 
+ Epoch 8 | batch 140 | Training loss : 0.8136340975761414 
+ Epoch 8 | batch 160 | Training loss : 0.5574776530265808 
+ Epoch 8 | batch 180 | Training loss : 0.9127443432807922 
+ Epoch 8 | batch 200 | Training loss : 1.1434725522994995 
+ Epoch 8 | batch 220 | Training loss : 0.3420034348964691 
+ Epoch 8 | batch 240 | Training loss : 0.4863349199295044 
+ Epoch 8 | batch 260 | Training loss : 0.6773977279663086 
+ Epoch 8 | batch 280 | Training loss : 0.5608543157577515 
+ Epoch 8 | batch 300 | Training loss : 1.3039039373397827 
+ Epoch 8 | batch 320 | Training loss : 0.626896321773529 
+ Epoch 8 | batch 340 | Training loss : 1.1274359226226807 
+ Epoch 8 | batch 360 | Training loss : 1.0145844221115112 
+ Epoch 8 | batch 380 | Training loss : 0.5766463279724121 
+ 
+----------------------------
+   Validation result for  8 epoch
+ Average loss: 0.7204855735911879 
+ Mean IOU: 0.43573065813797845 
+----------------------------
+***** Saved best model! *****
+ 
+# The best model is at epoch 8 with mean IOU 0.43573065813797845 Epoch 9 | batch 0 | Training loss : 0.7454848885536194 
+ Epoch 9 | batch 20 | Training loss : 0.8447974324226379 
+ Epoch 9 | batch 40 | Training loss : 0.5051265358924866 
+ Epoch 9 | batch 60 | Training loss : 1.2169532775878906 
+ Epoch 9 | batch 80 | Training loss : 0.6346390843391418 
+ Epoch 9 | batch 100 | Training loss : 0.6661279797554016 
+ Epoch 9 | batch 120 | Training loss : 0.6559255123138428 
+ Epoch 9 | batch 140 | Training loss : 0.8440119624137878 
+ Epoch 9 | batch 160 | Training loss : 0.6978638768196106 
+ Epoch 9 | batch 180 | Training loss : 0.9265420436859131 
+ Epoch 9 | batch 200 | Training loss : 0.5238271355628967 
+ Epoch 9 | batch 220 | Training loss : 0.877570629119873 
+ Epoch 9 | batch 240 | Training loss : 0.8979397416114807 
+ Epoch 9 | batch 260 | Training loss : 0.6645821332931519 
+ Epoch 9 | batch 280 | Training loss : 0.6151434779167175 
+ Epoch 9 | batch 300 | Training loss : 0.9406384825706482 
+ Epoch 9 | batch 320 | Training loss : 0.8455333709716797 
+ Epoch 9 | batch 340 | Training loss : 0.7604054808616638 
+ Epoch 9 | batch 360 | Training loss : 0.6056788563728333 
+ Epoch 9 | batch 380 | Training loss : 0.5157578587532043 
+ 
+----------------------------
+   Validation result for  9 epoch
+ Average loss: 0.6332103076369263 
+ Mean IOU: 0.4497882275389052 
+----------------------------
+***** Saved best model! *****
+ 
+# The best model is at epoch 9 with mean IOU 0.4497882275389052 Epoch 10 | batch 0 | Training loss : 0.6244949102401733 
+ Epoch 10 | batch 20 | Training loss : 0.7144143581390381 
+ Epoch 10 | batch 40 | Training loss : 0.621110200881958 
+ Epoch 10 | batch 60 | Training loss : 0.8866780400276184 
+ Epoch 10 | batch 80 | Training loss : 0.6248169541358948 
+ Epoch 10 | batch 100 | Training loss : 0.7913888096809387 
+ Epoch 10 | batch 120 | Training loss : 0.5786702036857605 
+ Epoch 10 | batch 140 | Training loss : 0.7101874947547913 
+ Epoch 10 | batch 160 | Training loss : 0.6912062168121338 
+ Epoch 10 | batch 180 | Training loss : 0.3595127761363983 
+ Epoch 10 | batch 200 | Training loss : 0.7384387850761414 
+ Epoch 10 | batch 220 | Training loss : 0.4726382791996002 
+ Epoch 10 | batch 240 | Training loss : 0.9934976100921631 
+ Epoch 10 | batch 260 | Training loss : 0.7029526233673096 
+ Epoch 10 | batch 280 | Training loss : 0.4706362783908844 
+ Epoch 10 | batch 300 | Training loss : 0.459803968667984 
+ Epoch 10 | batch 320 | Training loss : 0.9330906271934509 
+ Epoch 10 | batch 340 | Training loss : 0.7701571583747864 
+ Epoch 10 | batch 360 | Training loss : 0.47235509753227234 
+ Epoch 10 | batch 380 | Training loss : 0.5517199039459229 
+ 
+----------------------------
+   Validation result for  10 epoch
+ Average loss: 0.6236363573129787 
+ Mean IOU: 0.439137813460877 
+----------------------------
+ 
+# The best model is at epoch 9 with mean IOU 0.4497882275389052 Epoch 11 | batch 0 | Training loss : 0.4935692846775055 
+ Epoch 11 | batch 20 | Training loss : 1.3373408317565918 
+ Epoch 11 | batch 40 | Training loss : 0.4114721715450287 
+ Epoch 11 | batch 60 | Training loss : 0.5112726092338562 
+ Epoch 11 | batch 80 | Training loss : 0.6560593247413635 
+ Epoch 11 | batch 100 | Training loss : 0.41871365904808044 
+ Epoch 11 | batch 120 | Training loss : 0.8361856341362 
+ Epoch 11 | batch 140 | Training loss : 0.7452483773231506 
+ Epoch 11 | batch 160 | Training loss : 0.5598456859588623 
+ Epoch 11 | batch 180 | Training loss : 0.7989704012870789 
+ Epoch 11 | batch 200 | Training loss : 0.5630382895469666 
+ Epoch 11 | batch 220 | Training loss : 0.598574161529541 
+ Epoch 11 | batch 240 | Training loss : 0.525465726852417 
+ Epoch 11 | batch 260 | Training loss : 0.6260514855384827 
+ Epoch 11 | batch 280 | Training loss : 0.5488863587379456 
+ Epoch 11 | batch 300 | Training loss : 0.7592143416404724 
+ Epoch 11 | batch 320 | Training loss : 0.6907868385314941 
+ Epoch 11 | batch 340 | Training loss : 0.6175311803817749 
+ Epoch 11 | batch 360 | Training loss : 0.6136471629142761 
+ Epoch 11 | batch 380 | Training loss : 0.5416968464851379 
+ 
+----------------------------
+   Validation result for  11 epoch
+ Average loss: 0.6286657916945081 
+ Mean IOU: 0.45504666463579857 
+----------------------------
+***** Saved best model! *****
+ 
+# The best model is at epoch 11 with mean IOU 0.45504666463579857 Epoch 12 | batch 0 | Training loss : 0.7000102400779724 
+ Epoch 12 | batch 20 | Training loss : 0.7286356091499329 
+ Epoch 12 | batch 40 | Training loss : 0.5518529415130615 
+ Epoch 12 | batch 60 | Training loss : 0.570512592792511 
+ Epoch 12 | batch 80 | Training loss : 0.5629948377609253 
+ Epoch 12 | batch 100 | Training loss : 0.5316486358642578 
+ Epoch 12 | batch 120 | Training loss : 0.6628897786140442 
+ Epoch 12 | batch 140 | Training loss : 0.7068317532539368 
+ Epoch 12 | batch 160 | Training loss : 0.989704430103302 
+ Epoch 12 | batch 180 | Training loss : 0.9932089447975159 
+ Epoch 12 | batch 200 | Training loss : 0.4763065278530121 
+ Epoch 12 | batch 220 | Training loss : 0.6928558349609375 
+ Epoch 12 | batch 240 | Training loss : 0.574998140335083 
+ Epoch 12 | batch 260 | Training loss : 0.5875953435897827 
+ Epoch 12 | batch 280 | Training loss : 0.6048343777656555 
+ Epoch 12 | batch 300 | Training loss : 0.7149698138237 
+ Epoch 12 | batch 320 | Training loss : 0.7428459525108337 
+ Epoch 12 | batch 340 | Training loss : 0.4421369731426239 
+ Epoch 12 | batch 360 | Training loss : 1.12722909450531 
+ Epoch 12 | batch 380 | Training loss : 0.9504486918449402 
+ 
+----------------------------
+   Validation result for  12 epoch
+ Average loss: 0.6230341667352721 
+ Mean IOU: 0.44269386278552264 
+----------------------------
+ 
+# The best model is at epoch 11 with mean IOU 0.45504666463579857 Epoch 13 | batch 0 | Training loss : 0.5491994619369507 
+ Epoch 13 | batch 20 | Training loss : 0.7270340919494629 
+ Epoch 13 | batch 40 | Training loss : 0.8345747590065002 
+ Epoch 13 | batch 60 | Training loss : 0.719355583190918 
+ Epoch 13 | batch 80 | Training loss : 1.0546467304229736 
+ Epoch 13 | batch 100 | Training loss : 1.193597674369812 
+ Epoch 13 | batch 120 | Training loss : 0.5419275164604187 
+ Epoch 13 | batch 140 | Training loss : 0.3995526134967804 
+ Epoch 13 | batch 160 | Training loss : 0.6084043383598328 
+ Epoch 13 | batch 180 | Training loss : 0.42132148146629333 
+ Epoch 13 | batch 200 | Training loss : 0.42657753825187683 
+ Epoch 13 | batch 220 | Training loss : 0.8318027853965759 
+ Epoch 13 | batch 240 | Training loss : 0.5857914090156555 
+ Epoch 13 | batch 260 | Training loss : 1.042358160018921 
+ Epoch 13 | batch 280 | Training loss : 0.7389392852783203 
+ Epoch 13 | batch 300 | Training loss : 0.44953033328056335 
+ Epoch 13 | batch 320 | Training loss : 0.3545258939266205 
+ Epoch 13 | batch 340 | Training loss : 0.58781898021698 
+ Epoch 13 | batch 360 | Training loss : 0.5129503607749939 
+ Epoch 13 | batch 380 | Training loss : 0.7890824675559998 
+ 
+----------------------------
+   Validation result for  13 epoch
+ Average loss: 0.6325794222743012 
+ Mean IOU: 0.4646146666614656 
+----------------------------
+***** Saved best model! *****
+ 
+# The best model is at epoch 13 with mean IOU 0.4646146666614656 Epoch 14 | batch 0 | Training loss : 1.0284807682037354 
+ Epoch 14 | batch 20 | Training loss : 0.42490753531455994 
+ Epoch 14 | batch 40 | Training loss : 0.7392908930778503 
+ Epoch 14 | batch 60 | Training loss : 0.5383482575416565 
+ Epoch 14 | batch 80 | Training loss : 0.5500844120979309 
+ Epoch 14 | batch 100 | Training loss : 0.4341723620891571 
+ Epoch 14 | batch 120 | Training loss : 0.6892735362052917 
+ Epoch 14 | batch 140 | Training loss : 0.5003836750984192 
+ Epoch 14 | batch 160 | Training loss : 0.7968596816062927 
+ Epoch 14 | batch 180 | Training loss : 0.630419135093689 
+ Epoch 14 | batch 200 | Training loss : 0.9505948424339294 
+ Epoch 14 | batch 220 | Training loss : 0.5254218578338623 
+ Epoch 14 | batch 240 | Training loss : 0.8783060908317566 
+ Epoch 14 | batch 260 | Training loss : 0.665308952331543 
+ Epoch 14 | batch 280 | Training loss : 0.4573928117752075 
+ Epoch 14 | batch 300 | Training loss : 0.8375523686408997 
+ Epoch 14 | batch 320 | Training loss : 0.9883856177330017 
+ Epoch 14 | batch 340 | Training loss : 0.4699069559574127 
+ Epoch 14 | batch 360 | Training loss : 0.3874623477458954 
+ Epoch 14 | batch 380 | Training loss : 0.6675234436988831 
+ 
+----------------------------
+   Validation result for  14 epoch
+ Average loss: 0.5736258979453597 
+ Mean IOU: 0.4638914050326034 
+----------------------------
+ 
+# The best model is at epoch 13 with mean IOU 0.4646146666614656 Epoch 15 | batch 0 | Training loss : 0.6654767394065857 
+ Epoch 15 | batch 20 | Training loss : 0.5158581733703613 
+ Epoch 15 | batch 40 | Training loss : 0.7405876517295837 
+ Epoch 15 | batch 60 | Training loss : 0.6662899851799011 
+ Epoch 15 | batch 80 | Training loss : 0.6429959535598755 
+ Epoch 15 | batch 100 | Training loss : 0.5358719825744629 
+ Epoch 15 | batch 120 | Training loss : 0.6225059628486633 
+ Epoch 15 | batch 140 | Training loss : 0.6153166890144348 
+ Epoch 15 | batch 160 | Training loss : 0.38087621331214905 
+ Epoch 15 | batch 180 | Training loss : 0.39290788769721985 
+ Epoch 15 | batch 200 | Training loss : 0.6855611801147461 
+ Epoch 15 | batch 220 | Training loss : 0.41286206245422363 
+ Epoch 15 | batch 240 | Training loss : 0.892319917678833 
+ Epoch 15 | batch 260 | Training loss : 0.5639987587928772 
+ Epoch 15 | batch 280 | Training loss : 0.2583262026309967 
+ Epoch 15 | batch 300 | Training loss : 0.7252176403999329 
+ Epoch 15 | batch 320 | Training loss : 0.5362279415130615 
+ Epoch 15 | batch 340 | Training loss : 0.6797446608543396 
+ Epoch 15 | batch 360 | Training loss : 0.5736696720123291 
+ Epoch 15 | batch 380 | Training loss : 0.6300708651542664 
+ 
+----------------------------
+   Validation result for  15 epoch
+ Average loss: 0.6155540409476258 
+ Mean IOU: 0.4554204429881523 
+----------------------------
+ 
+# The best model is at epoch 13 with mean IOU 0.4646146666614656 Epoch 16 | batch 0 | Training loss : 0.9155802130699158 
+ Epoch 16 | batch 20 | Training loss : 0.7119658589363098 
+ Epoch 16 | batch 40 | Training loss : 0.425152063369751 
+ Epoch 16 | batch 60 | Training loss : 0.5396609306335449 
+ Epoch 16 | batch 80 | Training loss : 0.8065611720085144 
+ Epoch 16 | batch 100 | Training loss : 0.5746528506278992 
+ Epoch 16 | batch 120 | Training loss : 0.9446749091148376 
+ Epoch 16 | batch 140 | Training loss : 0.7446293830871582 
+ Epoch 16 | batch 160 | Training loss : 0.6654891967773438 
+ Epoch 16 | batch 180 | Training loss : 0.7818065285682678 
+ Epoch 16 | batch 200 | Training loss : 0.47286996245384216 
+ Epoch 16 | batch 220 | Training loss : 0.5932638049125671 
+ Epoch 16 | batch 240 | Training loss : 0.32035693526268005 
+ Epoch 16 | batch 260 | Training loss : 0.5400713086128235 
+ Epoch 16 | batch 280 | Training loss : 0.49798455834388733 
+ Epoch 16 | batch 300 | Training loss : 0.3945213258266449 
+ Epoch 16 | batch 320 | Training loss : 0.9536682963371277 
+ Epoch 16 | batch 340 | Training loss : 0.7784063220024109 
+ Epoch 16 | batch 360 | Training loss : 0.603691816329956 
+ Epoch 16 | batch 380 | Training loss : 0.6647510528564453 
+ 
+----------------------------
+   Validation result for  16 epoch
+ Average loss: 0.7192685520926188 
+ Mean IOU: 0.41627420267164017 
+----------------------------
+ 
+# The best model is at epoch 13 with mean IOU 0.4646146666614656 Epoch 17 | batch 0 | Training loss : 0.8129892349243164 
+ Epoch 17 | batch 20 | Training loss : 0.9546062350273132 
+ Epoch 17 | batch 40 | Training loss : 0.6400450468063354 
+ Epoch 17 | batch 60 | Training loss : 0.5942912697792053 
+ Epoch 17 | batch 80 | Training loss : 0.4320891797542572 
+ Epoch 17 | batch 100 | Training loss : 0.8968140482902527 
+ Epoch 17 | batch 120 | Training loss : 0.8136110901832581 
+ Epoch 17 | batch 140 | Training loss : 0.5757489800453186 
+ Epoch 17 | batch 160 | Training loss : 0.336468368768692 
+ Epoch 17 | batch 180 | Training loss : 0.7384399771690369 
+ Epoch 17 | batch 200 | Training loss : 0.4220949709415436 
+ Epoch 17 | batch 220 | Training loss : 0.41780969500541687 
+ Epoch 17 | batch 240 | Training loss : 0.5212714076042175 
+ Epoch 17 | batch 260 | Training loss : 0.6752374172210693 
+ Epoch 17 | batch 280 | Training loss : 0.6619870662689209 
+ Epoch 17 | batch 300 | Training loss : 0.40526291728019714 
+ Epoch 17 | batch 320 | Training loss : 0.36936309933662415 
+ Epoch 17 | batch 340 | Training loss : 0.7793503403663635 
+ Epoch 17 | batch 360 | Training loss : 0.46629631519317627 
+ Epoch 17 | batch 380 | Training loss : 0.4718833267688751 
+ 
+----------------------------
+   Validation result for  17 epoch
+ Average loss: 0.5340390756379726 
+ Mean IOU: 0.4607618392292361 
+----------------------------
+ 
+# The best model is at epoch 13 with mean IOU 0.4646146666614656 Epoch 18 | batch 0 | Training loss : 0.4778957664966583 
+ Epoch 18 | batch 20 | Training loss : 0.37086716294288635 
+ Epoch 18 | batch 40 | Training loss : 0.5314264893531799 
+ Epoch 18 | batch 60 | Training loss : 0.41506025195121765 
+ Epoch 18 | batch 80 | Training loss : 0.33729472756385803 
+ Epoch 18 | batch 100 | Training loss : 0.45502540469169617 
+ Epoch 18 | batch 120 | Training loss : 0.7182419896125793 
+ Epoch 18 | batch 140 | Training loss : 0.44929149746894836 
+ Epoch 18 | batch 160 | Training loss : 0.4996757209300995 
+ Epoch 18 | batch 180 | Training loss : 0.7596775889396667 
+ Epoch 18 | batch 200 | Training loss : 1.0874232053756714 
+ Epoch 18 | batch 220 | Training loss : 0.811197817325592 
+ Epoch 18 | batch 240 | Training loss : 0.31452473998069763 
+ Epoch 18 | batch 260 | Training loss : 0.4729425013065338 
+ Epoch 18 | batch 280 | Training loss : 0.6281941533088684 
+ Epoch 18 | batch 300 | Training loss : 0.4648076295852661 
+ Epoch 18 | batch 320 | Training loss : 1.6702518463134766 
+ Epoch 18 | batch 340 | Training loss : 0.3879963159561157 
+ Epoch 18 | batch 360 | Training loss : 0.3454797565937042 
+ Epoch 18 | batch 380 | Training loss : 0.7465286254882812 
+ 
+----------------------------
+   Validation result for  18 epoch
+ Average loss: 0.5508301181848659 
+ Mean IOU: 0.4823777581376632 
+----------------------------
+***** Saved best model! *****
+ 
+# The best model is at epoch 18 with mean IOU 0.4823777581376632 Epoch 19 | batch 0 | Training loss : 0.45733150839805603 
+ Epoch 19 | batch 20 | Training loss : 0.6869998574256897 
+ Epoch 19 | batch 40 | Training loss : 0.37204134464263916 
+ Epoch 19 | batch 60 | Training loss : 0.3880552351474762 
+ Epoch 19 | batch 80 | Training loss : 0.44660279154777527 

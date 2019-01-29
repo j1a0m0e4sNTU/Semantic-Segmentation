@@ -10,7 +10,7 @@ sys.path.append('models')
 from dataset import Dataset_Seg
 
 parser = argparse.ArgumentParser()
-parser.add_argument('mode', help='Train/Validate', choices=['train', 'validate'])
+parser.add_argument('mode', help='Train/Validate', choices=['train', 'validate', 'predict'])
 parser.add_argument('model', help='Model to be used')
 parser.add_argument('-lr', help= 'Learning rate',type=float, default= 1e-3)
 parser.add_argument('-batch_size', type= int, default= 4)
@@ -19,6 +19,7 @@ parser.add_argument('-save', help='Name to be save' , default='mdoel.pkl')
 parser.add_argument('-load', help='Weights to be load', default=None)
 parser.add_argument('-log', help='Log file', default='log.txt')
 parser.add_argument('-check_batch_num', help= 'How many batches to show result once', type= int, default=10)
+parser.add_argument('-predict_dir', help= 'Directory which stores predicted images', default='../prediction')
 
 args = parser.parse_args()
 
@@ -45,8 +46,10 @@ def main():
     manager.load_data(trian_loader, valid_loader)
     if args.mode == 'train':
         manager.train()
-    else:
+    elif args.mode == 'validate':
         manager.validate(0)
+    else:
+        manager.predict()
 
 if __name__ == '__main__':
     main()

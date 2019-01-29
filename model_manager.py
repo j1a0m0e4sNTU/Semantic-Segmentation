@@ -4,12 +4,21 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
 from util import *
+import cv2 as cv
+import os
 
 def get_string(*args):
     string = ''
     for s in args:
         string = string + ' ' + str(s)
     return string
+
+def get_mask_name(num):
+    num = str(num)
+    prefix = '0' * (4 - len(num))
+    suffix = '_mask.png'
+    name = prefix + num + suffix
+    return name
 
 class Manaeger():
     def __init__(self, model, args):
@@ -23,6 +32,7 @@ class Manaeger():
         self.save_name = args.save
         self.log_file = open(args.log, 'w')
         self.check_batch_num = args.check_batch_num
+        self.pred_dir = args.predict_dir
         self.best = (0, 0) #(epoch num, validation acc)
 
         load_name = args.load
@@ -104,5 +114,21 @@ class Manaeger():
         info = get_string('\n# The best model is at epoch', self.best[0], 'with mean IOU', self.best[1])
         self.record(info)
 
+    def predict(self):
+        self.model.eval()
+        for batch_id, (imgs, _) in enumerate(self.valid_loader):
+            count = batch_id * self.batch_size
+            out = self.model(imgs)
+            pred = out.max(1)[1]
+            self.save_prediction(pred, count)
+
+    def save_prediction(self, img_batch, num):
+        for i in range(self.batch_size):
+            name = os.path.join(self.pred_dir, get_mask_name(num + i))
+            cv.imwrite(name, img_batch[i])
+
 if __name__ == '__main__':
-    pass
+    print(get_mask_name(1))
+    print(get_mask_name(12))
+    print(get_mask_name(123))
+    print(get_mask_name(1234))

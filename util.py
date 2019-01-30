@@ -36,9 +36,9 @@ def label_to_mask(label):
     w, h = label.size()
     mask = torch.zeros((3, w, h), dtype= torch.long)
     mask[0] = label%2
-    label = label//2
+    label = (label - label%2)/2
     mask[1] = label%2
-    label = label//2
+    label = (label - label%2)/2
     mask[2] = label%2
 
     mask = mask * 255

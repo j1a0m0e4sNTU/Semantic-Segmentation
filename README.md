@@ -70,7 +70,7 @@ the overall mean IOU (evaluated by mean_iou_evaluate.py) is about **66%**
 
 ## Conclusion
 
-The training process is quite time comsuming, if the pretrained weight for VGG is used might help.
+The training process is quite time comsuming, if the pretrained weight for VGG16 is used, it might help reduce the training time.
 With the comparison between fcn32s_01.py and fcn32s_02.py, the former with only one transpose convolutional layer 
 makes the total parameter numbder as almost 3 times as that with 5 layers, whose training is much slower.
 However, the accuracy seems aren't affected much.

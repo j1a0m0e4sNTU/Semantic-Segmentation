@@ -78,7 +78,7 @@ def mean_iou(label_x, label_y):
     label_x : prediction
     label_y : ground truth
     '''
-    labels = [1, 2, 3, 5, 6, 7]
+    labels = [1, 2, 3, 4, 6, 7]
     iou = 0
     class_num = 0
     for label in labels:

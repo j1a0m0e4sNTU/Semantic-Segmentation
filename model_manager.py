@@ -118,8 +118,10 @@ class Manaeger():
     def predict(self):
         self.model.eval()
         for batch_id, (imgs, _) in enumerate(self.valid_loader):
+            imgs = imgs.to(self.device)
             count = batch_id * self.batch_size
             out = self.model(imgs)
+            out = out.to('cpu')
             pred = out.max(1)[1]
             self.save_prediction(pred, count)
 

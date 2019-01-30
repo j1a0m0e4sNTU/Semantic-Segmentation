@@ -1,4 +1,4 @@
-       Model: FCN-16s (upsample with 1 step) 
+       Model: FCN-32s (upsample with 1 step) 
  Learning rate: 0.001 
  Epoch number: 50 
  Batch size: 6 

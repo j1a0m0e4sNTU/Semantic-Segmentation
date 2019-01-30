@@ -10,7 +10,7 @@ sys.path.append('models')
 from dataset import Dataset_Seg
 
 parser = argparse.ArgumentParser()
-parser.add_argument('mode', help='Train/Validate', choices=['train', 'validate', 'predict'])
+parser.add_argument('mode', help='Train/Validate/Predict', choices=['train', 'validate', 'predict'])
 parser.add_argument('model', help='Model to be used')
 parser.add_argument('-lr', help= 'Learning rate',type=float, default= 1e-3)
 parser.add_argument('-batch_size', type= int, default= 4)

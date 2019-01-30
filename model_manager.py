@@ -22,6 +22,12 @@ def get_mask_name(num):
 
 class Manaeger():
     def __init__(self, model, args):
+        
+        load_name = args.load
+        if load_name != None:
+            weight = torch.load(load_name)
+            model.load_state_dict(weight)
+        
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.model = model.to(self.device)
         self.lr = args.lr
@@ -34,11 +40,6 @@ class Manaeger():
         self.check_batch_num = args.check_batch_num
         self.pred_dir = args.predict_dir
         self.best = (0, 0) #(epoch num, validation acc)
-
-        load_name = args.load
-        if load_name != None:
-            weight = torch.load(load_name)
-            self.model.load_state_dict(weight)
     
     def load_data(self, train_loader, valid_loader):
         self.train_loader = train_loader

@@ -60,7 +60,7 @@ class Model(nn.Module):
         self.final_layer = nn.Conv2d(32, 8, kernel_size=1)
 
     def name(self):
-        return 'FCN-16s (upsample with 5 step)'
+        return 'FCN-32s (upsample with 5 step)'
 
     def forward(self, x): 
         x = self.block_1(x)

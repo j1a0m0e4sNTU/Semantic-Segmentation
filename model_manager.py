@@ -125,7 +125,9 @@ class Manaeger():
     def save_prediction(self, img_batch, num):
         for i in range(self.batch_size):
             name = os.path.join(self.pred_dir, get_mask_name(num + i))
-            cv.imwrite(name, img_batch[i])
+            mask = label_to_mask(img_batch[i])
+            mask = torch_to_numpy(mask)
+            cv.imwrite(name, mask)
 
 if __name__ == '__main__':
     print(get_mask_name(1))

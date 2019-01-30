@@ -53,5 +53,28 @@
   ```
   python3 mean_iou_evaluate.py -g <ground truth masks directory> -p <prediction masks directory>
   ```
-  
-## Result & Conclusion
+
+## Result 
+
+The following are the result for FCN-8s trained after about 50 epochs
+over validation set, which aren't used during training.
+
+images from artificial satelite | ground truth mask  | prediction mask
+------------------------------- | ------------------ | ----------------
+![](images/valid/0008_sat.jpg) | ![](images/valid/0008_mask.png) | ![](images/pred/0008_mask.png)
+![](images/valid/0010_sat.jpg) | ![](images/valid/0010_mask.png) | ![](images/pred/0010_mask.png)
+![](images/valid/0128_sat.jpg) | ![](images/valid/0128_mask.png) | ![](images/pred/0128_mask.png)
+![](images/valid/0176_sat.jpg) | ![](images/valid/0176_mask.png) | ![](images/pred/0176_mask.png)
+
+the overall mean IOU (evaluated by mean_iou_evaluate.py) is about **66%**
+
+## Conclusion
+
+The training process is quite time comsuming, if the pretrained weight for VGG is used might help.
+With the comparison between fcn32s_01.py and fcn32s_02.py, the former with only one transpose convolutional layer 
+makes the total parameter numbder as almost 3 times as that with 5 layers, whose training is much slower.
+However, the accuracy seems aren't affected much.
+
+According to the experiment result, FCN-8s structure would gain greater performance than FCN-32s, which implied
+that the **skip connection** which enables model to extract previous information while deconvoluiton can help
+improve the predictoin accuracy in higher resolution.

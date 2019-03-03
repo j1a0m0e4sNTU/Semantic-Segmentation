@@ -20,7 +20,7 @@ def get_mask_name(num):
     name = prefix + num + suffix
     return name
 
-class Manaeger():
+class Manager():
     def __init__(self, model, args):
         
         load_name = args.load
